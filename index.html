@@ -280,19 +280,19 @@
 	}
 	
 	.page-wrap .info-card-label {
-		font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #bb0000 !important; font-weight: 800; margin-bottom: 8px;
+		font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #bb0000 !important; font-weight: 800; margin: 0 0 8px 0;
 	}
 	
 	.page-wrap .info-card h3 {
-		font-size: 22px; line-height: 1.2; color: #000 !important; font-weight: 900; margin-bottom: 10px;
+		font-size: 24px; line-height: 1.2; color: #000 !important; font-weight: 900; margin: 0 0 10px 0;
 	}
 	
 	.page-wrap .info-card > p {
-		font-size: 16px; line-height: 1.6; color: #222 !important; margin-bottom: 14px; flex: 1;
+		font-size: 16px; line-height: 1.6; color: #222 !important; margin: 0 0 14px 0; flex: 1;
 	}
 	
 	.page-wrap .info-card-tags {
-		background: #f7f8fa; border: 1px solid #d9dde3; border-radius: 12px; padding: 10px 12px; font-size: 14px; line-height: 1.5; color: #444 !important; margin-bottom: 16px;
+		background: #f7f8fa; border: 1px solid #d9dde3; border-radius: 12px; padding: 12px; font-size: 13px; line-height: 1.5; color: #444 !important; margin: 0 0 16px 0;
 	}
 	
 	.page-wrap .info-card-tags strong {
@@ -306,7 +306,7 @@
 	.page-wrap .btn-red:hover {
 		background: #990000; color: #fff !important;
 	}
-	/* ── ACCORDION SECTION (outside quick-guide-card) ── */
+	/* ── ACCORDION SECTION ── */
 	
 	.page-wrap .accordion-section {
 		display: flex; flex-direction: column; gap: 0;
@@ -417,21 +417,44 @@
 		<div class="search-results" id="search-results">
 			<br>
 		</div></div>
-	<!-- /.quick-guide-card -->
 	<!-- ACCORDION SECTIONS -->
 	<div class="accordion-section">
 		<!-- CVA 101 -->
-		<details class="quick-ref" style="display:block!important;visibility:visible!important;" open="">
+		<details class="quick-ref" style="display:block!important;visibility:visible!important;">
 			<summary><span class="quick-plus">+</span>CVA 101</summary>
 			<div class="quick-ref-body">
-				<div class="placeholder-box"><strong>To be determined:</strong> Content for CVA 101 will be added here.</div></div>
+				<div class="card-grid">
+					<div class="info-card" id="card-ms365">
+
+						<p class="info-card-label">Technical Support</p>
+
+						<h3>Microsoft 365 for CVA Students</h3>
+
+						<p>Learn how to access Microsoft 365 with your Cobb student login, use tools like Word, PowerPoint, Excel, and OneDrive, and upload files correctly in CTLS.</p>
+						<div class="info-card-tags"><strong>Search terms:</strong> Microsoft 365, Office 365, Word, PowerPoint, Excel, OneDrive, Upload Files, CTLS</div><a href="https://www.cobbk12.org/cobbvirtualacademy/ms-office-365" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div>
+					<div class="info-card" id="card-ctls-onboarding">
+
+						<p class="info-card-label">Student Support</p>
+
+						<h3>Access CTLS and Student Onboarding</h3>
+
+						<p>Learn how to log in to CTLS, open My Classes, access CVA Student Onboarding, and use the red navigation buttons to move through the onboarding pages in order.</p>
+						<div class="info-card-tags"><strong>Search terms:</strong> CTLS Login, Student Onboarding, My Classes, My Coursework, Navigation Buttons, CCSD Microsoft 365</div><a href="https://www.cobbk12.org/cobbvirtualacademy/access-ctls-and-student-onboarding" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div>
+					<div class="info-card" id="card-cva-basics">
+
+						<p class="info-card-label">Getting Started</p>
+
+						<h3>CVA Basics</h3>
+
+						<p>Review the basic tools and expectations for learning online at CVA, including computer requirements, email, school supplies, and CTLS navigation buttons.</p>
+						<div class="info-card-tags"><strong>Search terms:</strong> CVA Basics, Computer Requirements, Student Laptop, Email, School Supplies, Navigation Buttons, CTLS</div><a href="https://www.cobbk12.org/cobbvirtualacademy/cva-basics" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div></div></div>
 		</details>
 		<!-- SHIFTING TO ONLINE LEARNING -->
-		<details class="quick-ref" style="display:block!important;visibility:visible!important;" open="">
+		<details class="quick-ref" style="display:block!important;visibility:visible!important;">
 			<summary><span class="quick-plus">+</span>Shifting to Online Learning</summary>
 			<div class="quick-ref-body">
 				<div class="card-grid">
-					<div class="info-card" id="card-ctls-onboarding">
+					<div class="info-card" id="card-ctls-onboarding-2">
 
 						<p class="info-card-label">Student Support</p>
 
@@ -446,63 +469,61 @@
 						<h3>Submitting Work in CTLS</h3>
 
 						<p>Learn how to submit assignments in CTLS using attachments, screenshots, the text editor, recordings, annotations, and other assignment tools.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> Submit Work, CTLS Assignments, Add Attachments, Screenshots, Text Editor, Recordings, My Attachments</div><a href="https://www.cobbk12.org/cobbvirtualacademy/submitting-work-in-ctls" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div></div>
-				<!-- NAVIGATING CTLS ICONS CARD -->
-				<div style="font-family:Montserrat, Arial, sans-serif; background:#ffffff; border:1px solid #d9dde3; border-radius:16px; padding:22px; box-sizing:border-box; border-top:6px solid #bb0000; max-width:360px;">
+						<div class="info-card-tags"><strong>Search terms:</strong> Submit Work, CTLS Assignments, Add Attachments, Screenshots, Text Editor, Recordings, My Attachments</div><a href="https://www.cobbk12.org/cobbvirtualacademy/submitting-work-in-ctls" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div>
+					<div class="info-card" id="card-ctls-icons">
 
-					<p style="font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#bb0000; font-weight:800; margin:0 0 8px 0;">Getting Started</p>
+						<p class="info-card-label">Working in CTLS</p>
 
-					<h3 style="font-size:24px; line-height:1.2; color:#000000; margin:0 0 10px 0; font-weight:900;">Navigating CTLS Icons</h3>
+						<h3>Navigating CTLS Icons</h3>
 
-					<p style="font-size:15px; line-height:1.6; color:#222222; margin:0 0 14px 0;">Learn what common CTLS icons mean, including folders, pages, booklets, discussions, assignments, assessments, and navigation tools.</p>
-					<div style="background:#f7f8fa; border:1px solid #d9dde3; border-radius:12px; padding:12px; margin:0 0 16px 0;">
-
-						<p style="font-size:13px; line-height:1.5; color:#444444; margin:0;"><strong>Search terms:</strong> CTLS Icons, Folder, Page, Booklet, Discussion Board, Assignment, Assessment, Navigation</p>
-					</div><a href="https://www.cobbk12.org/cobbvirtualacademy/navigating-ctls-icons" target="_blank" rel="noopener" style="display:inline-block; background:#bb0000; color:#ffffff; text-decoration:none; font-size:14px; font-weight:800; padding:11px 16px; border-radius:999px;">&nbsp;Click here to view more&nbsp;</a></div></div>
+						<p>Learn what common CTLS icons mean, including folders, pages, booklets, discussions, assignments, assessments, and navigation tools.</p>
+						<div class="info-card-tags"><strong>Search terms:</strong> CTLS Icons, Folder, Page, Booklet, Discussion Board, Assignment, Assessment, Navigation</div><a href="https://www.cobbk12.org/cobbvirtualacademy/navigating-ctls-icons" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div></div></div>
 		</details>
 		<!-- STAYING CONNECTED -->
-		<details class="quick-ref" style="display:block!important;visibility:visible!important;" open="">
+		<details class="quick-ref" style="display:block!important;visibility:visible!important;">
 			<summary><span class="quick-plus">+</span>Staying Connected</summary>
 			<div class="quick-ref-body">
-				<div class="placeholder-box"><strong>To be determined:</strong> Content for Staying Connected will be added here.</div></div>
+				<div class="card-grid">
+					<div class="info-card" id="card-contacting-teacher">
+
+						<p class="info-card-label">Student Communication</p>
+
+						<h3>Contacting My Teacher</h3>
+
+						<p>Learn who to contact, how to reach your CVA teacher, and how to write clear, respectful messages that help you get support quickly.</p>
+						<div class="info-card-tags"><strong>Search terms:</strong> Contact Teacher, CTLS Parent, Email, Voice, CTLS Chat, School Counselor, Communication</div><a href="https://www.cobbk12.org/cobbvirtualacademy/contacting-my-teacher" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div>
+					<div class="info-card" id="card-ctls-parent">
+
+						<p class="info-card-label">Student Communication</p>
+
+						<h3>CTLS Parent</h3>
+
+						<p>Learn how students can use CTLS Parent to receive class messages, view announcements, send messages to teachers, and stay connected throughout the course.</p>
+						<div class="info-card-tags"><strong>Search terms:</strong> CTLS Parent, Student Messages, Announcements, Teacher Communication, Direct Messages, App Setup</div><a href="https://www.cobbk12.org/cobbvirtualacademy/ctls-parent" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div></div></div>
 		</details>
 		<!-- BEING A STUDENT -->
-		<details class="quick-ref" style="display:block!important;visibility:visible!important;" open="">
+		<details class="quick-ref" style="display:block!important;visibility:visible!important;">
 			<summary><span class="quick-plus">+</span>Being a Student</summary>
 			<div class="quick-ref-body">
 				<div class="placeholder-box"><strong>To be determined:</strong> Content for Being a Student will be added here.</div></div>
 		</details>
 		<!-- GRADING AND FEEDBACK -->
-		<details class="quick-ref" style="display:block!important;visibility:visible!important;" open="">
+		<details class="quick-ref" style="display:block!important;visibility:visible!important;">
 			<summary><span class="quick-plus">+</span>Grading and Feedback</summary>
 			<div class="quick-ref-body">
 				<div class="placeholder-box"><strong>To be determined:</strong> Content for Grading and Feedback will be added here.</div></div>
 		</details>
 		<!-- YOUR SUCCESS -->
-		<details class="quick-ref" style="display:block!important;visibility:visible!important;" open="">
+		<details class="quick-ref" style="display:block!important;visibility:visible!important;">
 			<summary><span class="quick-plus">+</span>Your Success</summary>
 			<div class="quick-ref-body">
 				<div class="placeholder-box"><strong>To be determined:</strong> Content for Your Success will be added here.</div></div>
 		</details>
 		<!-- TECHNOLOGY TROUBLESHOOTING -->
-		<details class="quick-ref" style="display:block!important;visibility:visible!important;" open="">
+		<details class="quick-ref" style="display:block!important;visibility:visible!important;">
 			<summary><span class="quick-plus">+</span>Technology Troubleshooting</summary>
 			<div class="quick-ref-body">
-				<div class="placeholder-box">
-					<br>
-				</div>
-				<!-- MICROSOFT 365 FOR CVA STUDENTS CARD -->
-				<div style="font-family:Montserrat, Arial, sans-serif; background:#ffffff; border:1px solid #d9dde3; border-radius:16px; padding:22px; box-sizing:border-box; border-top:6px solid #bb0000; max-width:360px;">
-
-					<p style="font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#bb0000; font-weight:800; margin:0 0 8px 0;">Student Support</p>
-
-					<h3 style="font-size:24px; line-height:1.2; color:#000000; margin:0 0 10px 0; font-weight:900;">Microsoft 365 for CVA Students</h3>
-
-					<p style="font-size:15px; line-height:1.6; color:#222222; margin:0 0 14px 0;">Learn how to access Microsoft 365 with your Cobb student login, use tools like Word, PowerPoint, Excel, and OneDrive, and upload files correctly in CTLS.</p>
-					<div style="background:#f7f8fa; border:1px solid #d9dde3; border-radius:12px; padding:12px; margin:0 0 16px 0;">
-
-						<p style="font-size:13px; line-height:1.5; color:#444444; margin:0;"><strong>Search terms:</strong> Microsoft 365, Office 365, Word, PowerPoint, Excel, OneDrive, Upload Files, CTLS</p>
-					</div><a href="https://www.cobbk12.org/cobbvirtualacademy/ms-office-365" target="_blank" rel="noopener" style="display:inline-block; background:#bb0000; color:#ffffff; text-decoration:none; font-size:14px; font-weight:800; padding:11px 16px; border-radius:999px;">&nbsp;Click here to view more&nbsp;</a></div></div>
+				<div class="placeholder-box"><strong>To be determined:</strong> Content for Technology Troubleshooting will be added here.</div></div>
 		</details>
 	</div>
 	<!-- /.accordion-section -->
@@ -600,7 +621,8 @@
 		{
 			if (!term)
 			{
-				clearResults(); clearBtn.style.display = 'none';
+				clearResults();
+				clearBtn.style.display = 'none';
 				return;
 			}
 			clearBtn.style.display = 'inline-block';
@@ -632,7 +654,8 @@
 			var term = getInputText().toLowerCase();
 			if (!term)
 			{
-				clearResults(); clearBtn.style.display = 'none';
+				clearResults();
+				clearBtn.style.display = 'none';
 				return;
 			}
 			var matches = cards.filter(function(c)
