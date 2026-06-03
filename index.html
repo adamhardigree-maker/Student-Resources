@@ -1,14 +1,12 @@
-<p>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-</p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
 <style>
 	/* Reset CMS interference inside our page-wrap */
-	
 	.page-wrap,
 	.page-wrap * {
 		box-sizing: border-box;
 	}
-	
+
 	.page-wrap h1,
 	.page-wrap h2,
 	.page-wrap h3,
@@ -16,307 +14,519 @@
 	.page-wrap h5 {
 		color: inherit;
 	}
-	
+
 	.page-wrap a {
-		color: inherit; text-decoration: none !important;
+		color: inherit;
+		text-decoration: none !important;
 	}
-	
+
 	.page-wrap a:hover {
 		color: inherit;
 	}
-	
+
 	.page-wrap strong {
 		color: inherit;
 	}
+
 	/* ── LAYOUT ── */
-	
 	.page-wrap {
-		max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; font-family: 'Montserrat', Arial, sans-serif; color: #222;
+		max-width: 1100px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+		font-family: 'Montserrat', Arial, sans-serif;
+		color: #222;
 	}
+
 	/* ── HERO ── */
-	
 	.page-wrap .hero-card {
-		background: #f4f4f4; border-radius: 16px; border-left: 6px solid #bb0000; padding: 28px 26px;
+		background: #f4f4f4;
+		border-radius: 16px;
+		border-left: 6px solid #bb0000;
+		padding: 28px 26px;
 	}
-	
+
 	.page-wrap .eyebrow,
 	.page-wrap .overview-label,
 	.page-wrap .quick-guide-label {
-		font-size: 12px; letter-spacing: .13em; text-transform: uppercase; color: #bb0000 !important; font-weight: 800; margin-bottom: 10px; display: block;
+		font-size: 12px;
+		letter-spacing: .13em;
+		text-transform: uppercase;
+		color: #bb0000 !important;
+		font-weight: 800;
+		margin-bottom: 10px;
+		display: block;
 	}
-	
+
 	.page-wrap .hero-card h1 {
-		font-family: 'Oswald', Arial, sans-serif; font-size: clamp(28px, 5vw, 48px); line-height: 1.0; color: #000 !important; font-weight: 700; text-transform: uppercase; margin-bottom: 12px;
+		font-family: 'Oswald', Arial, sans-serif;
+		font-size: clamp(28px, 5vw, 48px);
+		line-height: 1.0;
+		color: #000 !important;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 12px;
 	}
-	
+
 	.page-wrap .hero-card > p:not(.eyebrow) {
-		font-size: 16px; line-height: 1.7; color: #333;
+		font-size: 16px;
+		line-height: 1.7;
+		color: #333;
 	}
+
 	/* ── OVERVIEW ── */
-	
 	.page-wrap .overview-card {
-		background: #f5f5f5; border: 1px solid #d9dde3; border-radius: 16px; padding: 26px 28px;
+		background: #f5f5f5;
+		border: 1px solid #d9dde3;
+		border-radius: 16px;
+		padding: 26px 28px;
 	}
-	
+
 	.page-wrap .overview-card h2 {
-		font-family: 'Oswald', Arial, sans-serif; font-size: clamp(28px, 4vw, 34px); line-height: 1.15; color: #222 !important; text-transform: uppercase; font-weight: 900; margin-bottom: 12px;
+		font-family: 'Oswald', Arial, sans-serif;
+		font-size: clamp(28px, 4vw, 34px);
+		line-height: 1.15;
+		color: #222 !important;
+		text-transform: uppercase;
+		font-weight: 900;
+		margin-bottom: 12px;
 	}
-	
+
 	.page-wrap .overview-card > p:not(.overview-label) {
-		font-size: 16px; line-height: 1.7; color: #333; margin-bottom: 20px;
+		font-size: 16px;
+		line-height: 1.7;
+		color: #333;
+		margin-bottom: 20px;
 	}
-	
+
 	.page-wrap .overview-grid {
-		display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 14px;
 	}
-	
+
 	.page-wrap details.overview-reveal {
-		border-radius: 12px; overflow: hidden;
+		border-radius: 12px;
+		overflow: hidden;
 	}
-	
+
 	.page-wrap details.overview-reveal > summary {
-		background: #fff; border: 2px solid #d9dde3; border-left: 6px solid #bb0000; border-radius: 12px; padding: 18px; cursor: pointer; list-style: none; display: flex; flex-direction: column; justify-content: center; min-height: 90px;
+		background: #fff;
+		border: 2px solid #d9dde3;
+		border-left: 6px solid #bb0000;
+		border-radius: 12px;
+		padding: 18px;
+		cursor: pointer;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 90px;
 	}
-	
+
 	.page-wrap details.overview-reveal > summary::-webkit-details-marker {
 		display: none;
 	}
-	
+
 	.page-wrap details.overview-reveal[open] > summary {
-		border-bottom-left-radius: 0; border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
 	}
-	
+
 	.page-wrap .overview-reveal-title {
-		font-size: 15px; font-weight: 800; color: #222 !important; display: block; margin-bottom: 4px;
+		font-size: 15px;
+		font-weight: 800;
+		color: #222 !important;
+		display: block;
+		margin-bottom: 4px;
 	}
-	
+
 	.page-wrap .overview-reveal-sub {
-		font-size: 12px; color: #999 !important; font-style: italic;
+		font-size: 12px;
+		color: #999 !important;
+		font-style: italic;
 	}
-	
+
 	.page-wrap .overview-reveal-body {
-		background: #bb0000; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; padding: 16px 18px;
+		background: #bb0000;
+		border-bottom-left-radius: 12px;
+		border-bottom-right-radius: 12px;
+		padding: 16px 18px;
 	}
-	
+
 	.page-wrap .overview-reveal-body p {
-		font-size: 16px; line-height: 1.65; color: #fff !important; margin: 0;
+		font-size: 16px;
+		line-height: 1.65;
+		color: #fff !important;
+		margin: 0;
 	}
+
 	/* ── QUICK REFERENCE ── */
-	
 	.page-wrap .quick-guide-card {
-		background: #f4f4f4; border: 1px solid #d9dde3; border-radius: 16px; padding: 28px 26px;
+		background: #f4f4f4;
+		border: 1px solid #d9dde3;
+		border-radius: 16px;
+		padding: 28px 26px;
 	}
-	
+
 	.page-wrap .quick-guide-card h2 {
-		font-family: 'Oswald', Arial, sans-serif; font-size: clamp(25px, 4vw, 36px); font-weight: 700; text-transform: uppercase; color: #000 !important; line-height: 1.05; margin-bottom: 10px;
+		font-family: 'Oswald', Arial, sans-serif;
+		font-size: clamp(25px, 4vw, 36px);
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #000 !important;
+		line-height: 1.05;
+		margin-bottom: 10px;
 	}
-	
+
 	.page-wrap .quick-guide-intro {
-		font-size: 16px; line-height: 1.7; color: #333; margin-bottom: 18px;
+		font-size: 16px;
+		line-height: 1.7;
+		color: #333;
+		margin-bottom: 18px;
 	}
+
 	/* ── SEARCH ── */
-	
 	.page-wrap .search-label {
-		font-size: 12px; letter-spacing: .13em; text-transform: uppercase; color: #bb0000 !important; font-weight: 800; margin-bottom: 8px; display: block;
+		font-size: 12px;
+		letter-spacing: .13em;
+		text-transform: uppercase;
+		color: #bb0000 !important;
+		font-weight: 800;
+		margin-bottom: 8px;
+		display: block;
 	}
-	
+
 	.page-wrap .search-container {
-		width: 100%; margin-bottom: 8px;
+		width: 100%;
+		margin-bottom: 8px;
 	}
-	
+
 	.page-wrap .search-wrap {
-		display: flex; align-items: center; gap: 8px; background: #fff; border: 1px solid #cfd4da; border-radius: 6px; padding: 0 12px; height: 42px; width: 100%; max-width: 100%;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		background: #fff;
+		border: 1px solid #cfd4da;
+		border-radius: 6px;
+		padding: 0 12px;
+		height: 42px;
+		width: 100%;
+		max-width: 100%;
 	}
-	
+
 	.page-wrap .search-wrap:focus-within {
-		border-color: #bb0000; box-shadow: 0 0 0 2px rgba(187, 0, 0, 0.1);
+		border-color: #bb0000;
+		box-shadow: 0 0 0 2px rgba(187, 0, 0, 0.1);
 	}
-	
+
 	.page-wrap .search-wrap .ti-search {
-		color: #bb0000 !important; font-size: 17px;
+		color: #bb0000 !important;
+		font-size: 17px;
 	}
-	
+
 	.page-wrap .search-wrap .cva-search-input {
-		border: none; outline: none; font-family: 'Montserrat', Arial, sans-serif; font-size: 14px; color: #222; flex: 1; background: transparent; min-width: 0; cursor: text;
+		border: none;
+		outline: none;
+		font-family: 'Montserrat', Arial, sans-serif;
+		font-size: 14px;
+		color: #222;
+		flex: 1;
+		background: transparent;
+		min-width: 0;
+		cursor: text;
 	}
-	
+
 	.page-wrap .search-wrap .cva-search-input:empty::before {
-		content: attr(data-placeholder); color: #999; pointer-events: none;
+		content: attr(data-placeholder);
+		color: #999;
+		pointer-events: none;
 	}
-	
+
 	.page-wrap .search-wrap .cva-search-input:focus {
 		outline: none;
 	}
-	
+
 	.page-wrap .search-clear {
-		background: #f0f0f0; border: none; cursor: pointer; color: #777 !important; font-size: 14px; font-family: 'Montserrat', Arial, sans-serif; font-weight: 700; padding: 3px 8px; border-radius: 4px; line-height: 1.5; display: none; white-space: nowrap; user-select: none;
+		background: #f0f0f0;
+		border: none;
+		cursor: pointer;
+		color: #777 !important;
+		font-size: 14px;
+		font-family: 'Montserrat', Arial, sans-serif;
+		font-weight: 700;
+		padding: 3px 8px;
+		border-radius: 4px;
+		line-height: 1.5;
+		display: none;
+		white-space: nowrap;
+		user-select: none;
 	}
-	
+
 	.page-wrap .search-clear:hover {
-		color: #bb0000 !important; background: #fce8e8;
+		color: #bb0000 !important;
+		background: #fce8e8;
 	}
+
 	/* ── INLINE RESULTS ── */
-	
 	.page-wrap .search-results {
-		width: 100%; margin-bottom: 20px; display: none;
+		width: 100%;
+		margin-bottom: 20px;
+		display: none;
 	}
-	
+
 	.page-wrap .search-results.visible {
 		display: block;
 	}
-	
+
 	.page-wrap .results-list {
-		background: #fff; border: 1px solid #d9dde3; border-radius: 10px; overflow: hidden;
+		background: #fff;
+		border: 1px solid #d9dde3;
+		border-radius: 10px;
+		overflow: hidden;
 	}
-	
+
 	.page-wrap .result-item {
-		display: flex; align-items: center; gap: 12px; padding: 11px 14px; cursor: pointer; border-bottom: 1px solid #f0f0f0;
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding: 11px 14px;
+		cursor: pointer;
+		border-bottom: 1px solid #f0f0f0;
 	}
-	
+
 	.page-wrap .result-item:last-of-type {
 		border-bottom: none;
 	}
-	
+
 	.page-wrap .result-item:hover {
 		background: #fdf5f5;
 	}
-	
+
 	.page-wrap .result-icon {
-		width: 32px; height: 32px; border-radius: 8px; background: #fce8e8; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+		width: 32px;
+		height: 32px;
+		border-radius: 8px;
+		background: #fce8e8;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
 	}
-	
+
 	.page-wrap .result-icon i {
-		font-size: 15px; color: #bb0000 !important;
+		font-size: 15px;
+		color: #bb0000 !important;
 	}
-	
+
 	.page-wrap .result-title {
-		font-size: 14px; font-weight: 800; color: #111 !important;
+		font-size: 14px;
+		font-weight: 800;
+		color: #111 !important;
 	}
-	
+
 	.page-wrap .result-section {
-		font-size: 12px; color: #999 !important; margin-top: 1px;
+		font-size: 12px;
+		color: #999 !important;
+		margin-top: 1px;
 	}
-	
+
 	.page-wrap .results-empty {
-		padding: 16px; font-size: 14px; color: #999; text-align: center;
+		padding: 16px;
+		font-size: 14px;
+		color: #999;
+		text-align: center;
 	}
-	
+
 	.page-wrap .results-hint {
-		padding: 7px 14px; font-size: 12px; color: #aaa; background: #fafafa; border-top: 1px solid #f0f0f0; text-align: right;
+		padding: 7px 14px;
+		font-size: 12px;
+		color: #aaa;
+		background: #fafafa;
+		border-top: 1px solid #f0f0f0;
+		text-align: right;
 	}
+
 	/* ── SCROLL HIGHLIGHT ── */
-	
 	.page-wrap .card-highlight {
-		border: 2px solid #bb0000 !important; animation: cva-pulse 1s ease-out infinite;
+		border: 2px solid #bb0000 !important;
+		animation: cva-pulse 1s ease-out infinite;
 	}
-	
+
 	@keyframes cva-pulse {
-		0% {
-			box-shadow: 0 0 0 0 rgba(187, 0, 0, 0.5);
-		}
-		60% {
-			box-shadow: 0 0 0 10px rgba(187, 0, 0, 0);
-		}
-		100% {
-			box-shadow: 0 0 0 0 rgba(187, 0, 0, 0);
-		}
+		0%   { box-shadow: 0 0 0 0 rgba(187, 0, 0, 0.5); }
+		60%  { box-shadow: 0 0 0 10px rgba(187, 0, 0, 0); }
+		100% { box-shadow: 0 0 0 0 rgba(187, 0, 0, 0); }
 	}
+
 	/* ── ACCORDION ROWS ── */
-	
 	.page-wrap details.quick-ref {
-		display: block !important; border-radius: 6px; margin-bottom: 10px; overflow: hidden; background: #1e1e1e;
+		display: block !important;
+		border-radius: 6px;
+		margin-bottom: 10px;
+		overflow: hidden;
+		background: #1e1e1e;
 	}
-	
+
 	.page-wrap details.quick-ref > summary {
-		list-style: none; cursor: pointer; background: #1e1e1e; color: #fff !important; padding: 15px 18px; font-family: 'Montserrat', Arial, sans-serif; font-size: 14px; font-weight: 800; display: flex; align-items: center; gap: 10px; user-select: none;
+		list-style: none;
+		cursor: pointer;
+		background: #1e1e1e;
+		color: #fff !important;
+		padding: 15px 18px;
+		font-family: 'Montserrat', Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 800;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		user-select: none;
 	}
-	
+
 	.page-wrap details.quick-ref > summary::-webkit-details-marker {
 		display: none;
 	}
-	
+
 	.page-wrap details.quick-ref > summary:hover {
 		background: #2c2c2c;
 	}
-	
+
 	.page-wrap details.quick-ref > summary .quick-plus {
-		color: #fff !important; font-size: 16px; font-weight: 800; line-height: 1; transition: transform .2s;
+		color: #fff !important;
+		font-size: 16px;
+		font-weight: 800;
+		line-height: 1;
+		transition: transform .2s;
 	}
-	
+
 	.page-wrap details.quick-ref[open] > summary .quick-plus {
 		transform: rotate(45deg);
 	}
-	
+
 	.page-wrap .quick-ref-body {
-		background: #fff; border: 1px solid #d9dde3; border-top: none; padding: 20px 18px; font-size: 16px; line-height: 1.7; color: #333;
+		background: #fff;
+		border: 1px solid #d9dde3;
+		border-top: none;
+		padding: 20px 18px;
+		font-size: 16px;
+		line-height: 1.7;
+		color: #333;
 	}
-	
+
 	.page-wrap .quick-ref-body > p {
 		margin-bottom: 12px;
 	}
-	
+
 	.page-wrap .placeholder-box {
-		background: #fff; border: 1px solid #e0e0e0; border-left: 5px solid #bb0000; border-radius: 0 10px 10px 0; padding: 14px 16px; margin-top: 12px; font-size: 16px; line-height: 1.7; color: #333;
+		background: #fff;
+		border: 1px solid #e0e0e0;
+		border-left: 5px solid #bb0000;
+		border-radius: 0 10px 10px 0;
+		padding: 14px 16px;
+		margin-top: 12px;
+		font-size: 16px;
+		line-height: 1.7;
+		color: #333;
 	}
-	
+
 	.page-wrap .placeholder-box strong {
 		color: #bb0000 !important;
 	}
+
 	/* ── CARD GRID ── */
-	
 	.page-wrap .card-grid {
-		display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 14px;
 	}
-	
+
 	@media (max-width: 600px) {
 		.page-wrap .card-grid {
 			grid-template-columns: 1fr;
 		}
 	}
+
 	/* ── INFO CARDS ── */
-	
 	.page-wrap .info-card {
-		background: #fff; border: 1px solid #d9dde3; border-radius: 16px; padding: 22px; border-top: 6px solid #bb0000; display: flex; flex-direction: column;
+		background: #fff;
+		border: 1px solid #d9dde3;
+		border-radius: 16px;
+		padding: 22px;
+		border-top: 6px solid #bb0000;
+		display: flex;
+		flex-direction: column;
 	}
-	
+
 	.page-wrap .info-card-label {
-		font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #bb0000 !important; font-weight: 800; margin: 0 0 8px 0;
+		font-size: 12px;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		color: #bb0000 !important;
+		font-weight: 800;
+		margin: 0 0 8px 0;
 	}
-	
+
 	.page-wrap .info-card h3 {
-		font-size: 24px; line-height: 1.2; color: #000 !important; font-weight: 900; margin: 0 0 10px 0;
+		font-size: 24px;
+		line-height: 1.2;
+		color: #000 !important;
+		font-weight: 900;
+		margin: 0 0 10px 0;
 	}
-	
+
 	.page-wrap .info-card > p {
-		font-size: 16px; line-height: 1.6; color: #222 !important; margin: 0 0 14px 0; flex: 1;
+		font-size: 16px;
+		line-height: 1.6;
+		color: #222 !important;
+		margin: 0 0 14px 0;
+		flex: 1;
 	}
-	
+
 	.page-wrap .info-card-tags {
-		background: #f7f8fa; border: 1px solid #d9dde3; border-radius: 12px; padding: 12px; font-size: 13px; line-height: 1.5; color: #444 !important; margin: 0 0 16px 0;
+		background: #f7f8fa;
+		border: 1px solid #d9dde3;
+		border-radius: 12px;
+		padding: 12px;
+		font-size: 13px;
+		line-height: 1.5;
+		color: #444 !important;
+		margin: 0 0 16px 0;
 	}
-	
+
 	.page-wrap .info-card-tags strong {
 		color: #bb0000 !important;
 	}
-	
+
 	.page-wrap .btn-red {
-		display: inline-block; text-decoration: none !important; background: #bb0000; color: #fff !important; border-radius: 999px; padding: 10px 16px; font-size: 14px; font-weight: 800;
+		display: inline-block;
+		text-decoration: none !important;
+		background: #bb0000;
+		color: #fff !important;
+		border-radius: 999px;
+		padding: 10px 16px;
+		font-size: 14px;
+		font-weight: 800;
 	}
-	
+
 	.page-wrap .btn-red:hover {
-		background: #990000; color: #fff !important;
+		background: #990000;
+		color: #fff !important;
 	}
+
 	/* ── ACCORDION SECTION ── */
-	
 	.page-wrap .accordion-section {
-		display: flex; flex-direction: column; gap: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0;
 	}
-	
+
 	.page-wrap .accordion-section details.quick-ref {
-		display: block !important; visibility: visible !important;
+		display: block !important;
+		visibility: visible !important;
 	}
+
 	/* ── RESPONSIVE ── */
-	
 	@media (max-width: 640px) {
 		.page-wrap .hero-card,
 		.page-wrap .overview-card,
@@ -328,284 +538,292 @@
 			font-size: 26px;
 		}
 	}
-
 </style>
+
 <div class="page-wrap">
+
 	<!-- HERO -->
 	<div class="hero-card">
-
 		<p class="eyebrow">Student Support</p>
-
 		<h1>CVA Student Resources Hub</h1>
-
 		<p>Quick answers and resources for CVA students covering orientation, online learning, staying connected, academic success, grading, and support.</p>
 	</div>
+
 	<!-- OVERVIEW -->
 	<div class="overview-card">
-
 		<p class="overview-label">Overview</p>
-
 		<h2>CVA Student Guide</h2>
-
 		<p>Use this guide to explore the key areas of success as a CVA student. Click a card below to learn more about each topic.</p>
 		<div class="overview-grid">
 			<details class="overview-reveal">
 				<summary>&nbsp;<span class="overview-reveal-title">CVA 101</span> <span class="overview-reveal-sub">Click to learn more</span>&nbsp;</summary>
 				<div class="overview-reveal-body">
-
 					<p>Get started with the basics: logging in to CTLS, accessing Microsoft 365, and navigating your online classroom.</p>
 				</div>
 			</details>
 			<details class="overview-reveal">
 				<summary>&nbsp;<span class="overview-reveal-title">Online Learning</span> <span class="overview-reveal-sub">Click to learn more</span>&nbsp;</summary>
 				<div class="overview-reveal-body">
-
 					<p>Learn how to find assignments, understand due dates, submit your work, and read CTLS icons.</p>
 				</div>
 			</details>
 			<details class="overview-reveal">
 				<summary>&nbsp;<span class="overview-reveal-title">Staying Connected</span> <span class="overview-reveal-sub">Click to learn more</span>&nbsp;</summary>
 				<div class="overview-reveal-body">
-
 					<p>Discover how to reach your teacher and use CTLS Parent to stay informed and send messages.</p>
 				</div>
 			</details>
 			<details class="overview-reveal">
 				<summary>&nbsp;<span class="overview-reveal-title">Being a Student</span> <span class="overview-reveal-sub">Click to learn more</span>&nbsp;</summary>
 				<div class="overview-reveal-body">
-
 					<p>Build habits for online success with tips on managing your time and setting up a focused workspace.</p>
 				</div>
 			</details>
 			<details class="overview-reveal">
 				<summary>&nbsp;<span class="overview-reveal-title">Grading and Feedback</span> <span class="overview-reveal-sub">Click to learn more</span>&nbsp;</summary>
 				<div class="overview-reveal-body">
-
 					<p>Learn how to check your grades in CTLS and StudentVUE and find teacher feedback on your work.</p>
 				</div>
 			</details>
 			<details class="overview-reveal">
 				<summary>&nbsp;<span class="overview-reveal-title">Your Success</span> <span class="overview-reveal-sub">Click to learn more</span>&nbsp;</summary>
 				<div class="overview-reveal-body">
-
 					<p>Find out how CVA Learning Centers can help you stay on track and get support with your coursework.</p>
 				</div>
 			</details>
 			<details class="overview-reveal">
 				<summary>&nbsp;<span class="overview-reveal-title">&nbsp;Troubleshooting</span> <span class="overview-reveal-sub">Click to learn more</span>&nbsp;</summary>
 				<div class="overview-reveal-body">
-
 					<p>Try quick fixes for common tech issues like videos not playing, upload problems, and broken links.</p>
 				</div>
 			</details>
-		</div></div>
+		</div>
+	</div>
+
 	<!-- QUICK REFERENCE GUIDE -->
 	<div class="quick-guide-card" id="quick-reference-guide">
-
 		<p class="quick-guide-label">Quick Reference Guide</p>
-
 		<h2>How Do I Find What I Need?</h2>
-
 		<p class="quick-guide-intro">Use the sections below to learn more about each CVA student topic area. Search by keyword to quickly find a specific card.</p>
-
 		<p class="search-label">Search Keywords</p>
 		<div class="search-container">
 			<div class="search-wrap" id="cva-search-wrap">
-				<div id="cva-input" class="cva-search-input" contenteditable="true" spellcheck="false" data-placeholder="e.g. grading, login, feedback, assignments…">
-					<br>
-				</div><span id="cva-clear" class="search-clear" tabindex="0" style="display:none;">✕ Clear</span></div></div>
-		<div class="search-results" id="search-results">
-			<br>
-		</div></div>
+				<div id="cva-input" class="cva-search-input" contenteditable="true" spellcheck="false" data-placeholder="e.g. grading, login, feedback, assignments…"><br></div>
+				<span id="cva-clear" class="search-clear" tabindex="0" style="display:none;">✕ Clear</span>
+			</div>
+		</div>
+		<div class="search-results" id="search-results"></div>
+	</div>
+
 	<!-- ACCORDION SECTIONS -->
 	<div class="accordion-section">
+
 		<!-- CVA 101 -->
 		<details class="quick-ref" style="display:block!important;visibility:visible!important;">
 			<summary><span class="quick-plus">+</span>CVA 101</summary>
 			<div class="quick-ref-body">
 				<div class="card-grid">
 					<div class="info-card" id="card-ms365">
-
 						<p class="info-card-label">Technical Support</p>
-
 						<h3>Microsoft 365 for CVA Students</h3>
-
 						<p>Learn how to access Microsoft 365 with your Cobb student login, use tools like Word, PowerPoint, Excel, and OneDrive, and upload files correctly in CTLS.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> Microsoft 365, Office 365, Word, PowerPoint, Excel, OneDrive, Upload Files, CTLS</div><a href="https://www.cobbk12.org/cobbvirtualacademy/ms-office-365" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> Microsoft 365, Office 365, Word, PowerPoint, Excel, OneDrive, Upload Files, CTLS</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/ms-office-365" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
 					<div class="info-card" id="card-ctls-onboarding">
-
 						<p class="info-card-label">Student Support</p>
-
 						<h3>Access CTLS and Student Onboarding</h3>
-
 						<p>Learn how to log in to CTLS, open My Classes, access CVA Student Onboarding, and use the red navigation buttons to move through the onboarding pages in order.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> CTLS Login, Student Onboarding, My Classes, My Coursework, Navigation Buttons, CCSD Microsoft 365</div><a href="https://www.cobbk12.org/cobbvirtualacademy/access-ctls-and-student-onboarding" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> CTLS Login, Student Onboarding, My Classes, My Coursework, Navigation Buttons, CCSD Microsoft 365</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/access-ctls-and-student-onboarding" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
 					<div class="info-card" id="card-cva-basics">
-
 						<p class="info-card-label">Getting Started</p>
-
 						<h3>CVA Basics</h3>
-
 						<p>Review the basic tools and expectations for learning online at CVA, including computer requirements, email, school supplies, and CTLS navigation buttons.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> CVA Basics, Computer Requirements, Student Laptop, Email, School Supplies, Navigation Buttons, CTLS</div><a href="https://www.cobbk12.org/cobbvirtualacademy/cva-basics" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div></div></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> CVA Basics, Computer Requirements, Student Laptop, Email, School Supplies, Navigation Buttons, CTLS</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/cva-basics" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
+				</div>
+			</div>
 		</details>
+
 		<!-- SHIFTING TO ONLINE LEARNING -->
 		<details class="quick-ref" style="display:block!important;visibility:visible!important;">
-			<summary><span class="quick-plus">+</span>Shifting to Online Learning</summary>
+			<summary><span class="quick-plus">+</span>Online Learning</summary>
 			<div class="quick-ref-body">
 				<div class="card-grid">
 					<div class="info-card" id="card-ctls-onboarding-2">
-
 						<p class="info-card-label">Student Support</p>
-
 						<h3>Access CTLS and Student Onboarding</h3>
-
 						<p>Learn how to log in to CTLS, open My Classes, access CVA Student Onboarding, and use the red navigation buttons to move through the onboarding pages in order.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> CTLS Login, Student Onboarding, My Classes, My Coursework, Navigation Buttons, CCSD Microsoft 365</div><a href="https://www.cobbk12.org/cobbvirtualacademy/access-ctls-and-student-onboarding" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> CTLS Login, Student Onboarding, My Classes, My Coursework, Navigation Buttons, CCSD Microsoft 365</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/access-ctls-and-student-onboarding" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
 					<div class="info-card" id="card-submitting-work">
-
 						<p class="info-card-label">Assignments</p>
-
 						<h3>Submitting Work in CTLS</h3>
-
 						<p>Learn how to submit assignments in CTLS using attachments, screenshots, the text editor, recordings, annotations, and other assignment tools.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> Submit Work, CTLS Assignments, Add Attachments, Screenshots, Text Editor, Recordings, My Attachments</div><a href="https://www.cobbk12.org/cobbvirtualacademy/submitting-work-in-ctls" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> Submit Work, CTLS Assignments, Add Attachments, Screenshots, Text Editor, Recordings, My Attachments</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/submitting-work-in-ctls" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
 					<div class="info-card" id="card-anatomy-assignment">
-
 						<p class="info-card-label">Assignments</p>
-
 						<h3>Anatomy of an Assignment</h3>
-
 						<p>Learn how to read a CTLS assignment page, find directions, review resources, check submission instructions, and understand due dates before you begin working.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> Assignment Page, CTLS Assignment, Directions, Resources, Submit Work, Due Date, Assignment Instructions</div><a href="https://www.cobbk12.org/cobbvirtualacademy/anatomy-of-an-assignment" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> Assignment Page, CTLS Assignment, Directions, Resources, Submit Work, Due Date, Assignment Instructions</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/anatomy-of-an-assignment" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
 					<div class="info-card" id="card-ctls-icons">
-
 						<p class="info-card-label">Assignments</p>
-
 						<h3>Navigating CTLS Icons</h3>
-
 						<p>Learn what common CTLS icons mean, including folders, pages, booklets, discussions, assignments, assessments, and navigation tools.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> CTLS Icons, Folder, Page, Booklet, Discussion Board, Assignment, Assessment, Navigation</div><a href="https://www.cobbk12.org/cobbvirtualacademy/navigating-ctls-icons" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> CTLS Icons, Folder, Page, Booklet, Discussion Board, Assignment, Assessment, Navigation</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/navigating-ctls-icons" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
 					<div class="info-card" id="card-finding-assignments">
-
 						<p class="info-card-label">Assignments</p>
-
 						<h3>Finding Assignments and Due Dates</h3>
-
 						<p>Learn where to find assignments in My Coursework and how to use the Class Schedule to keep track of due dates, deadlines, and upcoming work.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> Assignments, Due Dates, Class Schedule, My Coursework, CTLS, Deadlines, Coursework Menu</div><a href="https://www.cobbk12.org/cobbvirtualacademy/finding-assignments-and-due-dates" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div></div></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> Assignments, Due Dates, Class Schedule, My Coursework, CTLS, Deadlines, Coursework Menu</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/finding-assignments-and-due-dates" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
+				</div>
+			</div>
 		</details>
+
 		<!-- STAYING CONNECTED -->
 		<details class="quick-ref" style="display:block!important;visibility:visible!important;">
 			<summary><span class="quick-plus">+</span>Staying Connected</summary>
 			<div class="quick-ref-body">
 				<div class="card-grid">
 					<div class="info-card" id="card-contacting-teacher">
-
 						<p class="info-card-label">Student Communication</p>
-
 						<h3>Contacting My Teacher</h3>
-
 						<p>Learn who to contact, how to reach your CVA teacher, and how to write clear, respectful messages that help you get support quickly.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> Contact Teacher, CTLS Parent, Email, Voice, CTLS Chat, School Counselor, Communication</div><a href="https://www.cobbk12.org/cobbvirtualacademy/contacting-my-teacher" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> Contact Teacher, CTLS Parent, Email, Voice, CTLS Chat, School Counselor, Communication</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/contacting-my-teacher" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
 					<div class="info-card" id="card-ctls-parent">
-
 						<p class="info-card-label">Student Communication</p>
-
 						<h3>CTLS Parent</h3>
-
 						<p>Learn how students can use CTLS Parent to receive class messages, view announcements, send messages to teachers, and stay connected throughout the course.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> CTLS Parent, Student Messages, Announcements, Teacher Communication, Direct Messages, App Setup</div><a href="https://www.cobbk12.org/cobbvirtualacademy/ctls-parent" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div></div></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> CTLS Parent, Student Messages, Announcements, Teacher Communication, Direct Messages, App Setup</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/ctls-parent" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
+				</div>
+			</div>
 		</details>
+
 		<!-- BEING A STUDENT -->
 		<details class="quick-ref" style="display:block!important;visibility:visible!important;">
 			<summary><span class="quick-plus">+</span>Being a Student</summary>
 			<div class="quick-ref-body">
 				<div class="card-grid">
 					<div class="info-card" id="card-time-management">
-
 						<p class="info-card-label">Online Learning Success</p>
-
 						<h3>Time Management Tips</h3>
-
 						<p>Learn simple strategies for managing your time in an online class, including checking in daily, starting early, using a plan, and creating a weekly routine.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> Time Management, Online Learning, Weekly Routine, Class Schedule, Planner, Deadlines, Study Habits</div><a href="https://www.cobbk12.org/cobbvirtualacademy/time-management-tips" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> Time Management, Online Learning, Weekly Routine, Class Schedule, Planner, Deadlines, Study Habits</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/time-management-tips" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
 					<div class="info-card" id="card-creating-space">
-
 						<p class="info-card-label">Online Learning Success</p>
-
 						<h3>Creating a Space</h3>
-
 						<p>Learn how to create a manageable workspace for online learning by choosing a place to focus, reducing distractions, and keeping materials ready.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> Workspace, Online Learning, Study Space, Focus, Distractions, Materials, Organization</div><a href="https://www.cobbk12.org/cobbvirtualacademy/creating-a-space" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div></div></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> Workspace, Online Learning, Study Space, Focus, Distractions, Materials, Organization</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/creating-a-space" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
+				</div>
+			</div>
 		</details>
+
 		<!-- GRADING AND FEEDBACK -->
 		<details class="quick-ref" style="display:block!important;visibility:visible!important;">
 			<summary><span class="quick-plus">+</span>Grading and Feedback</summary>
 			<div class="quick-ref-body">
 				<div class="card-grid">
 					<div class="info-card" id="card-checking-grades">
-
 						<p class="info-card-label">Grades and Feedback</p>
-
 						<h3>Checking Grades</h3>
-
 						<p>Learn how to check your grades in CTLS and StudentVUE, understand common gradebook icons, review feedback, and keep track of your progress.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> Grades, My Grades, StudentVUE, Synergy, Gradebook Icons, Feedback, Missing Work, Progress</div><a href="https://www.cobbk12.org/cobbvirtualacademy/checking-grades" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> Grades, My Grades, StudentVUE, Synergy, Gradebook Icons, Feedback, Missing Work, Progress</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/checking-grades" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
 					<div class="info-card" id="card-checking-feedback">
-
 						<p class="info-card-label">Grades and Feedback</p>
-
 						<h3>Checking Feedback</h3>
-
 						<p>Learn how to find, read, and use teacher feedback in CTLS, including feedback on assessments, assignments, attachments, and discussion boards.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> Feedback, My Grades, Instructor Feedback, Assessment Feedback, Assignment Feedback, Attachments, Discussion Feedback</div><a href="https://www.cobbk12.org/cobbvirtualacademy/checking-feedback" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div></div></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> Feedback, My Grades, Instructor Feedback, Assessment Feedback, Assignment Feedback, Attachments, Discussion Feedback</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/checking-feedback" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
+				</div>
+			</div>
 		</details>
+
 		<!-- YOUR SUCCESS -->
 		<details class="quick-ref" style="display:block!important;visibility:visible!important;">
 			<summary><span class="quick-plus">+</span>Your Success</summary>
 			<div class="quick-ref-body">
 				<div class="card-grid">
 					<div class="info-card" id="card-learning-centers">
-
 						<p class="info-card-label">Student Support</p>
-
 						<h3>CVA Learning Centers</h3>
-
 						<p>Learn how CVA Learning Centers can support students with online coursework, organization, assignment completion, and staying on track.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> Learning Center, Student Support, Online Help, Coursework Support, Assignment Help, Staying on Track</div><a href="https://www.cobbk12.org/cobbvirtualacademy/cva-learning-centers" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div></div></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> Learning Center, Student Support, Online Help, Coursework Support, Assignment Help, Staying on Track</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/cva-learning-centers" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
+				</div>
+			</div>
 		</details>
+
 		<!-- TECHNOLOGY TROUBLESHOOTING -->
 		<details class="quick-ref" style="display:block!important;visibility:visible!important;">
 			<summary><span class="quick-plus">+</span>Technology Troubleshooting</summary>
 			<div class="quick-ref-body">
 				<div class="card-grid">
 					<div class="info-card" id="card-technical-troubleshooting">
-
 						<p class="info-card-label">Student Support</p>
-
 						<h3>Technical Troubleshooting</h3>
-
 						<p>Try quick fixes for common technology issues, including videos not playing, assignments not opening, grayed-out coursework, upload problems, broken links, and missing submissions.</p>
-						<div class="info-card-tags"><strong>Search terms:</strong> Troubleshooting, Technology Help, Video Not Playing, Assignment Not Opening, Grayed Out Coursework, Upload Issues, Broken Links</div><a href="https://www.cobbk12.org/cobbvirtualacademy/technical-troubleshooting" target="_blank" rel="noopener" class="btn-red">Click here to view more</a></div></div></div>
+						<div class="info-card-tags"><strong>Search terms:</strong> Troubleshooting, Technology Help, Video Not Playing, Assignment Not Opening, Grayed Out Coursework, Upload Issues, Broken Links</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/technical-troubleshooting" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
+					<div class="info-card" id="card-common-file-types">
+						<p class="info-card-label">Files and Assignments</p>
+						<h3>Common File Types</h3>
+						<p>Learn what common file extensions mean, what different file types are used for, and which programs can open them.</p>
+						<div class="info-card-tags"><strong>Search terms:</strong> File Types, File Extensions, DOCX, PDF, PPTX, XLSX, JPG, PNG, MP4, ZIP</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/common-file-types" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
+					<div class="info-card" id="card-downloading-uploading">
+						<p class="info-card-label">Files and Assignments</p>
+						<h3>Downloading and Uploading Files</h3>
+						<p>Learn how to download files from CTLS, open them on your device, and upload completed files back into your online course.</p>
+						<div class="info-card-tags"><strong>Search terms:</strong> Download Files, Upload Files, File Types, Browse, Select File, Add Attachment, Submit Work</div>
+						<a href="https://www.cobbk12.org/cobbvirtualacademy/downloading-and-uploading-files" target="_blank" rel="noopener" class="btn-red">Click here to view more</a>
+					</div>
+				</div>
+			</div>
 		</details>
-		<!-- FOOTER -->
-		<hr style="border:none; border-top:1px solid #d9dde3; margin:28px 0 14px 0;">
 
-		<p style="font-family:Oswald, Arial, sans-serif; font-size:22px; color:#63666A; font-weight:700; letter-spacing:1px; text-transform:uppercase; margin:0; text-align:center;"><strong>Class. Virtually. Anywhere.</strong></p>
+		<!-- FOOTER -->
+		<hr style="border: none; border-top: 1px solid #d9dde3; margin: 28px 0 14px 0;">
+		<p style="font-family: Oswald, Arial, sans-serif; font-size: 22px; color: #63666A; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin: 0; text-align: center;"><strong>Class. Virtually. Anywhere.</strong></p>
+
 	</div>
 	<!-- /.accordion-section -->
+
 </div>
 <!-- /.page-wrap -->
+
 <script>
-	(function()
-	{
+	(function () {
 		var inputEl = document.getElementById('cva-input');
 		var clearBtn = document.getElementById('cva-clear');
 		var resultsEl = document.getElementById('search-results');
 
-		document.querySelectorAll('details.quick-ref').forEach(function(d)
-		{
+		document.querySelectorAll('details.quick-ref').forEach(function (d) {
 			d.style.display = 'block';
 			d.removeAttribute('hidden');
 			d.removeAttribute('open');
@@ -613,7 +831,7 @@
 
 		var sectionIcons = {
 			'CVA 101': 'ti-school',
-			'Shifting to Online Learning': 'ti-device-laptop',
+			'Online Learning': 'ti-device-laptop',
 			'Staying Connected': 'ti-message',
 			'Being a Student': 'ti-user',
 			'Grading and Feedback': 'ti-checklist',
@@ -621,19 +839,14 @@
 			'Technology Troubleshooting': 'ti-device-desktop'
 		};
 
-		var cards = Array.from(document.querySelectorAll('.info-card[id]')).map(function(el)
-		{
-			var title = (el.querySelector('h3') ||
-			{}).textContent || '';
-			var label = (el.querySelector('.info-card-label') ||
-			{}).textContent || '';
-			var tags = (el.querySelector('.info-card-tags') ||
-			{}).textContent || '';
+		var cards = Array.from(document.querySelectorAll('.info-card[id]')).map(function (el) {
+			var title = (el.querySelector('h3') || {}).textContent || '';
+			var label = (el.querySelector('.info-card-label') || {}).textContent || '';
+			var tags = (el.querySelector('.info-card-tags') || {}).textContent || '';
 			var accordion = el.closest('details.quick-ref');
 			var sumEl = accordion ? accordion.querySelector('summary') : null;
 			var section = '';
-			if (sumEl)
-			{
+			if (sumEl) {
 				var clone = sumEl.cloneNode(true);
 				var plusEl = clone.querySelector('.quick-plus');
 				if (plusEl) plusEl.remove();
@@ -650,111 +863,88 @@
 
 		var highlightTimer = null;
 
-		function iconFor(s)
-		{
+		function iconFor(s) {
 			return sectionIcons[s] || 'ti-file';
 		}
 
-		function getInputText()
-		{
+		function getInputText() {
 			return (inputEl.textContent || inputEl.innerText || '').trim();
 		}
 
-		function clearResults()
-		{
+		function clearResults() {
 			resultsEl.innerHTML = '';
 			resultsEl.classList.remove('visible');
 		}
 
-		function scrollToCard(id)
-		{
+		function scrollToCard(id) {
 			var card = document.getElementById(id);
 			if (!card) return;
 			var accordion = card.closest('details.quick-ref');
 			if (accordion) accordion.open = true;
-			card.scrollIntoView(
-			{
-				behavior: 'smooth',
-				block: 'center'
-			});
+			card.scrollIntoView({ behavior: 'smooth', block: 'center' });
 			card.classList.add('card-highlight');
 			clearTimeout(highlightTimer);
-			highlightTimer = setTimeout(function()
-			{
+			highlightTimer = setTimeout(function () {
 				card.classList.remove('card-highlight');
 			}, 5000);
 		}
 
-		function renderResults(matches, term)
-		{
-			if (!term)
-			{
+		function renderResults(matches, term) {
+			if (!term) {
 				clearResults();
 				clearBtn.style.display = 'none';
 				return;
 			}
 			clearBtn.style.display = 'inline-block';
 			resultsEl.classList.add('visible');
-			if (matches.length === 0)
-			{
+			if (matches.length === 0) {
 				resultsEl.innerHTML = '<div class="results-list"><div class="results-empty">No results found for &ldquo;' + term + '&rdquo;</div></div>';
 				return;
 			}
-			var rows = matches.map(function(c)
-			{
+			var rows = matches.map(function (c) {
 				return '<div class="result-item" data-id="' + c.id + '">' +
 					'<div class="result-icon"><i class="ti ' + iconFor(c.section) + '" aria-hidden="true"></i></div>' +
 					'<div><div class="result-title">' + c.title + '</div><div class="result-section">' + c.section + '</div></div>' +
 					'</div>';
 			}).join('');
 			resultsEl.innerHTML = '<div class="results-list">' + rows + '<div class="results-hint">Click a result to jump to that card</div></div>';
-			resultsEl.querySelectorAll('.result-item').forEach(function(item)
-			{
-				item.addEventListener('click', function()
-				{
+			resultsEl.querySelectorAll('.result-item').forEach(function (item) {
+				item.addEventListener('click', function () {
 					scrollToCard(item.dataset.id);
 				});
 			});
 		}
 
-		function doSearch()
-		{
+		function doSearch() {
 			var term = getInputText().toLowerCase();
-			if (!term)
-			{
+			if (!term) {
 				clearResults();
 				clearBtn.style.display = 'none';
 				return;
 			}
-			var matches = cards.filter(function(c)
-			{
+			var matches = cards.filter(function (c) {
 				return (c.title + ' ' + c.label + ' ' + c.section + ' ' + c.tags).toLowerCase().includes(term);
 			});
 			renderResults(matches, term);
 		}
 
 		inputEl.addEventListener('input', doSearch);
-		inputEl.addEventListener('keydown', function(e)
-		{
+		inputEl.addEventListener('keydown', function (e) {
 			if (e.keyCode === 13) e.preventDefault();
 		});
-		inputEl.addEventListener('paste', function(e)
-		{
+		inputEl.addEventListener('paste', function (e) {
 			e.preventDefault();
 			var text = (e.clipboardData || window.clipboardData).getData('text/plain');
 			document.execCommand('insertText', false, text);
 		});
-		clearBtn.addEventListener('click', function()
-		{
+		clearBtn.addEventListener('click', function () {
 			inputEl.textContent = '';
 			clearResults();
 			clearBtn.style.display = 'none';
 			inputEl.focus();
 		});
-		clearBtn.addEventListener('keydown', function(e)
-		{
-			if (e.keyCode === 13 || e.keyCode === 32)
-			{
+		clearBtn.addEventListener('keydown', function (e) {
+			if (e.keyCode === 13 || e.keyCode === 32) {
 				e.preventDefault();
 				inputEl.textContent = '';
 				clearResults();
@@ -763,5 +953,4 @@
 			}
 		});
 	})();
-
 </script>
